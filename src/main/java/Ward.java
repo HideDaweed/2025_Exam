@@ -58,7 +58,7 @@ public abstract class Ward {
     public void inactive_bay(String service, String ward, int time){
 
         //this.getWard_name().equals(ward)
-        if (this.getWard_name().equals(ward)){
+
             if (Objects.equals(service, "Ultrasound")){
                 this.ultrasound = false;
                 this.ultrasound_act = false;
@@ -72,7 +72,7 @@ public abstract class Ward {
                 this.ecg = false;
                 this.ecg_act = false;
             }
-        }
+
     }
 
     public void update_bay(String service, String ward, int time){
